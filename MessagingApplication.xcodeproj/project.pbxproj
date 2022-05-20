@@ -17,6 +17,8 @@
 		02707EA128380ED9006693C6 /* MessagingApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02707EA028380ED9006693C6 /* MessagingApplicationTests.swift */; };
 		02707EAB28380ED9006693C6 /* MessagingApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02707EAA28380ED9006693C6 /* MessagingApplicationUITests.swift */; };
 		02707EAD28380ED9006693C6 /* MessagingApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02707EAC28380ED9006693C6 /* MessagingApplicationUITestsLaunchTests.swift */; };
+		02707EBA28380F24006693C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02707EB928380F24006693C6 /* GoogleService-Info.plist */; };
+		02707EBD283810BA006693C6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 02707EBC283810BA006693C6 /* FirebaseAnalytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,7 @@
 		02707EA628380ED9006693C6 /* MessagingApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessagingApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02707EAA28380ED9006693C6 /* MessagingApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingApplicationUITests.swift; sourceTree = "<group>"; };
 		02707EAC28380ED9006693C6 /* MessagingApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		02707EB928380F24006693C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02707EBD283810BA006693C6 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +112,7 @@
 				02707E9228380ED9006693C6 /* Assets.xcassets */,
 				02707E9428380ED9006693C6 /* LaunchScreen.storyboard */,
 				02707E9728380ED9006693C6 /* Info.plist */,
+				02707EB928380F24006693C6 /* GoogleService-Info.plist */,
 				02707E8F28380ED7006693C6 /* MessagingApplication.xcdatamodeld */,
 			);
 			path = MessagingApplication;
@@ -146,6 +151,9 @@
 			dependencies = (
 			);
 			name = MessagingApplication;
+			packageProductDependencies = (
+				02707EBC283810BA006693C6 /* FirebaseAnalytics */,
+			);
 			productName = MessagingApplication;
 			productReference = 02707E8328380ED7006693C6 /* MessagingApplication.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 02707E7A28380ED7006693C6;
+			packageReferences = (
+				02707EBB283810BA006693C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 02707E8428380ED7006693C6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02707E9628380ED9006693C6 /* LaunchScreen.storyboard in Resources */,
+				02707EBA28380F24006693C6 /* GoogleService-Info.plist in Resources */,
 				02707E9328380ED9006693C6 /* Assets.xcassets in Resources */,
 				02707E8E28380ED7006693C6 /* Main.storyboard in Resources */,
 			);
@@ -606,6 +618,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02707EBB283810BA006693C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02707EBC283810BA006693C6 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02707EBB283810BA006693C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		02707E8F28380ED7006693C6 /* MessagingApplication.xcdatamodeld */ = {
