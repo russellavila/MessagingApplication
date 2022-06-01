@@ -23,7 +23,7 @@ class ChatViewController: UIViewController {
         super.viewDidLoad()
         sendButton.addTarget(self, action: #selector(self.Auth), for: .touchUpInside)
         var x = 0
-        
+
         FirebaseAuth.Auth.auth().signInAnonymously { (user, error) in
                if let error = error {
                  print("Sign in failed:", error.localizedDescription)

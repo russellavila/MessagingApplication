@@ -82,10 +82,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="633"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yry-Dv-j8C">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="1200"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="0.0"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qaa-Ug-LzP">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="1200"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="0.0"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <nil key="textColor"/>
@@ -95,7 +95,6 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="Qaa-Ug-LzP" firstAttribute="leading" secondItem="yry-Dv-j8C" secondAttribute="leading" id="4Yj-PV-Wg9"/>
-                                                    <constraint firstAttribute="height" constant="1200" id="8He-Lv-S0c"/>
                                                     <constraint firstAttribute="trailing" secondItem="Qaa-Ug-LzP" secondAttribute="trailing" id="8og-ZO-ANm"/>
                                                     <constraint firstItem="Qaa-Ug-LzP" firstAttribute="top" secondItem="yry-Dv-j8C" secondAttribute="top" id="Fjr-Jp-DtE"/>
                                                     <constraint firstAttribute="bottom" secondItem="Qaa-Ug-LzP" secondAttribute="bottom" id="lhD-EN-4t7"/>
